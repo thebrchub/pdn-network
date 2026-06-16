@@ -12,7 +12,6 @@
   --font-heading: "Playfair Display", serif;
 }
 
-/* Base styles for the light theme default */
 @layer base {
   body {
     @apply bg-brand-light text-brand-dark font-sans antialiased;
@@ -20,5 +19,36 @@
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight text-brand-dark;
+  }
+
+  /* ==========================================
+     Custom Scrollbar Styles
+  ========================================== */
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+
+  /* Webkit (Chrome, Edge, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1; /* soft slate-300 */
+    border-radius: 10px;
+    /* The border creates a transparent padding effect around the thumb */
+    border: 3px solid var(--color-brand-light); 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-brand-accent); 
   }
 }
