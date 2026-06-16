@@ -37,7 +37,7 @@ export default function FinalCTA() {
               Post your project and match with verified professionals backed by our delivery guarantee.
             </p>
             
-            <button className="mt-auto w-full px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors duration-300 shadow-lg flex items-center justify-center gap-2">
+            <button className="mt-auto w-full px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors duration-300 shadow-lg flex items-center justify-center gap-2 cursor-pointer">
               Post a Project
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -59,7 +59,7 @@ export default function FinalCTA() {
               Build a verified reputation and never chase a payment again. Apply to join the network.
             </p>
             
-            <button className="mt-auto w-full px-8 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-colors duration-300 shadow-sm flex items-center justify-center gap-2">
+            <button className="mt-auto w-full px-8 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-colors duration-300 shadow-sm flex items-center justify-center gap-2 cursor-pointer">
               Apply as Professional
             </button>
           </div>

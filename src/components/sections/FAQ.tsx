@@ -88,12 +88,12 @@ export default function FAQ() {
             </p>
 
             {/* SMOOTH SLIDING UI TOGGLE SWITCH */}
-            <div className="p-1.5 bg-slate-100 rounded-2xl w-full max-w-md mb-12 shadow-[inset_0_2px_4px_rgba(0,0,0,0.03)] border border-slate-200/60">
+            <div className="p-1.5 bg-slate-100 rounded-2xl w-full max-w-md mb-12 shadow-[inset_0_2px_4px_rgba(0,0,0,0.03)] border border-slate-200/60 ">
               <div className="relative flex w-full">
                 
                 {/* The Sliding Background Pill */}
                 <div 
-                  className={`absolute top-0 bottom-0 w-1/2 bg-white rounded-xl shadow-sm border border-slate-200/50 transition-transform duration-300 ease-out z-0 ${
+                  className={`absolute top-0 bottom-0 w-1/2 bg-white rounded-xl shadow-sm border border-slate-200/50 transition-transform duration-300 ease-out z-0  ${
                     activeTab === 'businesses' ? 'translate-x-0' : 'translate-x-full'
                   }`}
                 ></div>
@@ -102,7 +102,7 @@ export default function FAQ() {
                 <button
                   onClick={() => handleTabChange('businesses')}
                   className={`flex-1 relative z-10 py-3 px-6 rounded-xl font-bold text-sm transition-colors duration-300 focus:outline-none ${
-                    activeTab === 'businesses' ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'
+                    activeTab === 'businesses' ? 'text-slate-900 ' : 'text-slate-500 hover:text-slate-700 cursor-pointer'
                   }`}
                 >
                   For Businesses
@@ -110,7 +110,7 @@ export default function FAQ() {
                 <button
                   onClick={() => handleTabChange('professionals')}
                   className={`flex-1 relative z-10 py-3 px-6 rounded-xl font-bold text-sm transition-colors duration-300 focus:outline-none ${
-                    activeTab === 'professionals' ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'
+                    activeTab === 'professionals' ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700 cursor-pointer'
                   }`}
                 >
                   For Professionals
@@ -141,26 +141,26 @@ export default function FAQ() {
           {/* ======================================== */}
           {/* RIGHT COLUMN: INTERACTIVE ACCORDION      */}
           {/* ======================================== */}
-          <div className="lg:col-span-7 space-y-4">
+          <div className="lg:col-span-7 space-y-4 ">
             {currentFaqs.map((faq, index) => {
               const isOpen = openIndex === index;
 
               return (
                 <div 
                   key={index}
-                  className="group relative bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 overflow-hidden hover:shadow-[0_8px_20px_rgba(0,0,0,0.04)]"
+                  className="group relative bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 overflow-hidden hover:shadow-[0_8px_20px_rgba(0,0,0,0.04)]  "
                 >
                   <button 
                     onClick={() => toggleFaq(index)}
-                    className="w-full text-left flex items-center justify-between p-6 focus:outline-none"
+                    className="w-full text-left flex items-center justify-between p-6 focus:outline-none cursor-pointer"
                     aria-expanded={isOpen}
                   >
-                    <span className={`text-[16px] lg:text-[17px] font-semibold font-sans tracking-tight pr-8 transition-colors duration-300 ${isOpen ? 'text-indigo-600' : 'text-slate-800 group-hover:text-indigo-600'}`}>
+                    <span className={`text-[16px] lg:text-[17px] font-semibold font-sans tracking-tight pr-8 transition-colors duration-300 ${isOpen ? 'text-indigo-600' : 'text-slate-800 group-hover:text-indigo-600 cursor-pointer'}`}>
                       {faq.question}
                     </span>
                     
                     {/* The + / x Icon */}
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? 'bg-indigo-100 text-indigo-600 rotate-45' : 'bg-slate-50 text-slate-400 group-hover:bg-indigo-50 group-hover:text-indigo-500'}`}>
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? 'bg-indigo-100 text-indigo-600 rotate-45' : 'bg-slate-50 text-slate-400 group-hover:bg-indigo-50 group-hover:text-indigo-500 cursor-pointer'}`}>
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
                       </svg>

@@ -33,13 +33,13 @@ export default function Hero() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 mb-2">
-                <button className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 text-[15px]">
+                <button className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 text-[15px] cursor-pointer">
                   Start a Project
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
-                <button className="px-8 py-4 bg-white text-slate-700 border-[1.5px] border-slate-200 font-bold rounded-xl hover:bg-slate-50 transition-colors text-[15px]">
+                <button className="px-8 py-4 bg-white text-slate-700 border-[1.5px] border-slate-200 font-bold rounded-xl hover:bg-slate-50 transition-colors text-[15px] cursor-pointer">
                   Join as a Professional
                 </button>
               </div>

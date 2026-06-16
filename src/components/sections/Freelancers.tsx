@@ -104,7 +104,7 @@ export default function Freelancers() {
             </div>
             
             <div className="mt-12">
-              <button className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 text-[15px] self-start">
+              <button className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 text-[15px] self-start cursor-pointer">
                 Apply to Join ProSpec
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
