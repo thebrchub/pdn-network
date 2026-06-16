@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-brand-dark: #0F172A;
+  --color-brand-light: #F8FAFC;
+  --color-brand-accent: #2563EB;
+  --color-brand-teal: #14B8A6;
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+}
+
+/* Base styles for the light theme default */
+@layer base {
+  body {
+    @apply bg-brand-light text-brand-dark font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-brand-dark;
+  }
+}

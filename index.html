@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+
+    <title>ProSpec | Enterprise Precision & IT Operations</title>
+    <meta name="description" content="ProSpec provides elite enterprise-grade solutions for precision monitoring, network intelligence, and operational excellence." />
+    <meta name="keywords" content="ProSpec, IT operations, enterprise intelligence, network monitoring, operational precision" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="ProSpec" />
+    
+    <!-- Update this canonical URL to your actual production domain once live -->
+    <link rel="canonical" href="https://www.prospec.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.prospec.com/" />
+    <meta property="og:title" content="ProSpec | Enterprise Precision" />
+    <meta property="og:description" content="Optimize your enterprise operations with ProSpec's precision intelligence platform." />
+    <meta property="og:image" content="https://www.prospec.com/og-image.jpg" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.prospec.com/" />
+    <meta property="twitter:title" content="ProSpec | Enterprise Precision" />
+    <meta property="twitter:description" content="Optimize your enterprise operations with ProSpec's precision intelligence platform." />
+    <meta property="twitter:image" content="https://www.prospec.com/og-image.jpg" />
+
+    <link id="dynamic-favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Favicon theme switcher -->
+    <script>
+      const favicon = document.getElementById('dynamic-favicon');
+      const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      const updateFavicon = (e) => {
+        // Switch to a dark-mode specific favicon if you have one, 
+        // otherwise it stays on the default.
+        favicon.href = e.matches ? '/favicon.svg' : '/favicon.svg';
+      };
+      
+      updateFavicon(matcher);
+      matcher.addEventListener('change', updateFavicon);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@700;900&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ProSpec",
+      "url": "https://www.prospec.com",
+      "logo": "https://www.prospec.com/favicon.svg",
+      "description": "Enterprise-grade precision monitoring and operational intelligence solutions."
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
