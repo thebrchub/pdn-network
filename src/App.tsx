@@ -24,23 +24,29 @@ import NewProject from './components/dashboard/ClientSideDashboard/NewProject';
 import ProjectProposals from './components/dashboard/ProfessionalSideDashboard/ProjectProposals';
 import ClientMessages from './components/dashboard/ClientSideDashboard/ClientMessages';
 import ClientTalentPool from './components/dashboard/ClientSideDashboard/ClientTalentPool';
-import ClientEscrow from './components/dashboard/ClientSideDashboard/ClientEscrow'; 
+import ClientEscrow from './components/dashboard/ClientSideDashboard/ClientEscrow';
 import ClientSettings from './components/dashboard/ClientSideDashboard/ClientSettings';
 import ClientReports from './components/dashboard/ClientSideDashboard/ClientReports';
-import ClientProjects from './components/dashboard/ClientSideDashboard/ClientProjects'; 
+import ClientProjects from './components/dashboard/ClientSideDashboard/ClientProjects';
 import ClientReviews from './components/dashboard/ClientSideDashboard/ClientReviews';
+import PublicTrustProfile from './components/dashboard/PublicTrustProfile';
 
 // 5. PROFESSIONAL SHELL & PAGES
 import ProfessionalLayout from './layouts/ProfessionalLayout';
-import ProfessionalDashboard from './components/dashboard/ProfessionalSideDashboard/ProfessionalDashboard';
+import Today from './components/dashboard/ProfessionalSideDashboard/Today/Today';
+import Opportunities from './components/dashboard/ProfessionalSideDashboard/Opportunities/Opportunities';
+import Projects from './components/dashboard/ProfessionalSideDashboard/Projects/Projects';
+import Reputation from './components/dashboard/ProfessionalSideDashboard/Reputation/Reputation';
+import Earnings from './components/dashboard/ProfessionalSideDashboard/Earnings/Earnings';
 import ProfessionalMessages from './components/dashboard/ProfessionalSideDashboard/ProfessionalMessages';
-import PublicTrustProfile from './components/dashboard/PublicTrustProfile';
+import Profile from './components/dashboard/ProfessionalSideDashboard/Profile/Profile';
+import Settings from './components/dashboard/ProfessionalSideDashboard/Settings/Settings';
 
 function App() {
   return (
     <Router>
       <Routes>
-        
+
         {/* Public Routes */}
         <Route path="/" element={<HomePage />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
@@ -77,9 +83,14 @@ function App() {
         {/* Professional Protected Routes */}
         <Route path="/p" element={<ProfessionalLayout />}>
           <Route index element={<Navigate to="/p/dashboard" replace />} />
-          <Route path="dashboard" element={<ProfessionalDashboard />} />
+          <Route path="dashboard" element={<Today />} />
+          <Route path="opportunities" element={<Opportunities />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="reputation" element={<Reputation />} />
+          <Route path="earnings" element={<Earnings />} />
           <Route path="messages" element={<ProfessionalMessages />} />
-          <Route path="profile" element={<PublicTrustProfile />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
 
         {/* Fallback 404 Route */}
