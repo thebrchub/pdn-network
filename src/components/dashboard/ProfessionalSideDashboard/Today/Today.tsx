@@ -6,7 +6,7 @@ export default function ProfessionalDashboard() {
     <div className="p-6 sm:p-8 animate-page-in w-full h-full font-sans">
 
       {/* 1. Header Banner */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden mb-8">
+      <div className="bg-gradient-to-r from-blue-950 to-slate-900 rounded-2xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden mb-8">
         <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-indigo-500/20 rounded-full blur-2xl"></div>
 

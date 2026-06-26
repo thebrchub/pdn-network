@@ -11,7 +11,7 @@ export default function Hero() {
 
         {/* Main layout container */}
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-[1440px] relative z-20">
-          
+
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[640px]">
 
             {/* ======================================== */}
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="w-full pt-6 pb-12 lg:pt-10 lg:pb-16 xl:pt-12 xl:pb-20 z-20 pr-4 flex flex-col justify-center">
 
               {/* Headline */}
-              <h1 className="text-[3.2rem] sm:text-[3.5rem] lg:text-[3.5rem] xl:text-[4rem] font-black text-slate-900 leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-[3.2rem] sm:text-[3.5rem] lg:text-[3.5rem] xl:text-[3rem] font-black text-slate-900 leading-[1.05] tracking-tight mb-6">
                 Where Great Businesses <br />
                 <span className="text-indigo-600">Meet Trusted Professionals</span>
               </h1>
@@ -85,9 +85,9 @@ export default function Hero() {
         {/* DOUBLE CURVED SVG DIVIDER (BOTTOM)       */}
         {/* ======================================== */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 translate-y-[2px]">
-          <svg 
-            viewBox="0 0 1440 120" 
-            className="block w-full h-[50px] md:h-[90px]" 
+          <svg
+            viewBox="0 0 1440 120"
+            className="block w-full h-[50px] md:h-[90px]"
             preserveAspectRatio="none"
           >
             <path fill="#F1F5F9" d="M0,60L48,64C96,68,192,76,288,78.7C384,81,480,76,576,64C672,52,768,33,864,29.3C960,25,1056,36,1152,44C1248,52,1344,57,1392,59.3L1440,61.3L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
