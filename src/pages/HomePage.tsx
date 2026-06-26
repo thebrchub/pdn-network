@@ -19,7 +19,7 @@ export default function HomePage() {
       <Navbar />
       
       {/* Add top padding to account for the fixed navbar */}
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-20 relative animate-page-in">
         <Hero />
         <Problem />
         <HowItWorks />

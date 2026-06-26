@@ -78,7 +78,7 @@ export default function Footer() {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-slate-500 text-[13px] font-medium">
-              &copy; {currentYear} BRC STUDIOS LLP. All rights reserved.
+              &copy; {currentYear} BRC HUB LLP. All rights reserved.
             </p>
             <div className="flex items-center gap-1.5 text-slate-500 text-[13px] font-medium bg-slate-800/30 px-3 py-1.5 rounded-full border border-slate-700/50">
               Made with <span className="text-indigo-500">♥</span> in India
