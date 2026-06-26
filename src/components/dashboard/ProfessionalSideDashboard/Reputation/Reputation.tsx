@@ -59,7 +59,7 @@ export default function Reputation() {
         <div className="lg:col-span-8 space-y-8">
 
           {/* Trust Score Apple Fitness Visual */}
-          <div className="bg-gradient-to-b from-blue-600 to-indigo-800 rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
+          <div className="bg-gradient-to-b from-blue-950 to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
 
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
