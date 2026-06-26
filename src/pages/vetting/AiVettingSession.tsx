@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 
 export default function AiVettingSession() {
   const [timeLeft, setTimeLeft] = useState(180); // 3 minutes
   const [code, setCode] = useState(`function optimizeDataFetcher(urls) {\n  // Implement your solution here\n  // Remember to handle promise rejection\n\n}`);
-  const [isRecording, setIsRecording] = useState(true);
+  // const [isRecording, setIsRecording] = useState(true);
 
   // Simple countdown timer
   useEffect(() => {
